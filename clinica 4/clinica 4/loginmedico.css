@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f0f6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: #f0f6ff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.logo {
+  font-size: 60px;
+  color: #3b5bfc;
+  font-weight: bold;
+}
+
+.plus {
+  font-size: 18px;
+}
+
+.subtitulo {
+  font-size: 40px;
+  color: #3b5bfc;
+  margin-top: 10px;
+}
+
+.titulo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3b5bfc;
+  margin: 10px 0 30px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(59, 91, 252, 0.1);
+  font-size: 16px;
+  color: #3b5bfc;
+  outline: none;
+}
+
+.login-form input::placeholder {
+  color: #8ca0c3;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(to right, #3b5bfc, #4a6fff);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+  background: linear-gradient(to right, #4a6fff, #3b5bfc);
+}
+
+.voltar {
+  display: block;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #8ca0c3;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.voltar:hover {
+  color: #3b5bfc;
+}

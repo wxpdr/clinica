@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MacKito - Clínica</title>
+  <link rel="stylesheet" href="paciente.css" />
+</head>
+<body>
+  <header class="logo">
+    <div class="logoo"><a href="index.html">MacKito</a><span class="plus">+</span></div>
+  </header>
+
+  <div class="titulo">
+    <h1 id="nome-paciente">Olá, Paciente</h1>
+  </div>
+
+  <div class="content">
+    <div class="botoes">
+      <button class="btn consultar" onclick="carregarConsultas()">
+        <span class="icone">🧴</span> Ver Consultas
+      </button>
+      <button class="btn ficha" onclick="window.location.href='cardiologia.html'">
+        <span class="icone">💚</span> Agendar Consulta
+      </button>
+    </div>
+    <div class="image-content">
+      <img src="freepik__four-people-average-age-35-average-race-mixed-wear__21351.png" alt="Doutor" class="doctor-img" />
+    </div>
+  </div>
+
+  <div class="consultas-container" id="lista-consultas"></div>
+
+  <script src="paciente.js"></script>
+</body>
+</html>

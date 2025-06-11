@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardiologia - MacKito</title>
+  <link rel="stylesheet" href="cardiologia.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">MacKito <span class="plus">+</span></div>
+    <nav class="nav-links">
+      <a href="index.html">Menu</a>
+      <a href="#">Agendamento</a>
+      <a href="#">Especialidades</a>
+      <button class="btn-login">🩺 Entre ou registre-se</button>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Cardiologia</h2>
+
+    <div class="cards">
+      <div class="card" onclick="selecionarMedico('Dr. Vinicius')">
+        <div class="icon-circle"><span>🩺</span></div>
+        <h3>Consultas</h3>
+        <p>Dr. Vinicius</p>
+      </div>
+      <div class="card" onclick="selecionarMedico('Dr. Pelat')">
+        <div class="icon-circle"><span>🔬</span></div>
+        <h3>Exames</h3>
+        <p>Dr. Pelat</p>
+      </div>
+      <div class="card" onclick="selecionarMedico('Dra. Wendy')">
+        <div class="icon-circle"><span>🏥</span></div>
+        <h3>Cirurgia</h3>
+        <p>Dra. Wendy</p>
+      </div>
+    </div>
+
+    <div class="agendamento-container" id="form-agendamento" style="display: none;">
+      <h3 id="medico-selecionado">Agendar com:</h3>
+      <label for="data">Data:</label>
+      <input type="date" id="data" required>
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" required>
+      <button onclick="confirmarAgendamento()">Confirmar Agendamento</button>
+    </div>
+
+    <a href="index.html" class="voltar">← Voltar para tela inicial</a>
+  </div>
+
+  <script src="cardiologia.js"></script>
+</body>
+</html>
